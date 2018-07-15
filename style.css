@@ -1,0 +1,53 @@
+.navbar{
+    position: relative;
+    /* top: 5px; */
+    bottom: 5px;
+    /* padding: 5px; */
+}
+.header a{
+    background-color: blueviolet;
+    color: white;
+    position: relative;
+    left: 20px;
+    top: 0%;
+    bottom: 0%;
+}
+body{
+    background-color: aquamarine;
+}
+img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    position: relative;
+    left: 0px;
+}
+.text{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.homeimage{
+    float: left;
+    width: 70%;
+    height: 70%;
+}
+@media (max-width: 480px) {
+    .navbar li {
+        padding: 10px;
+    }
+    .navbar h1 {
+        visibility: hidden;
+    }
+}
+.compimage img{
+    width: 500px;
+    height: 400px;
+    padding-bottom: 10px;
+}
+h2{
+    padding: 20px;
+    position: relative;
+    left: 20%;
+}
+.background{
+    background-color: aliceblue
+}
