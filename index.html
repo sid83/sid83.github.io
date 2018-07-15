@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <h1 class="header"><a href="Index.html">Lattitude</a></h1>       <!--class header defined in css-->
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="temperature.html">Max Temperature</a></li>
+                    <li><a href="humidity.html">Humidity</a></li>
+                    <li><a href="cloudiness.html">Cloudiness</a></li>
+                    <li><a href="wind.html">Wind Speed</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="Index.html">Home</a></li>
+                </ul>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="cities.htm">DataUsed</a></li>
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1>Summary: Latitude Vs. X</h1>
+                <hr>
+                <p>
+                    <img class="homeimage" src="Resources\assets\images\Fig1.png" alt="Lattitude Vs Temperature Plot">
+                    <p class="text">
+                        This is a python script to visualize the weather of 500+ cities across the world of varying distance
+                        from the equator. after assembling the dataset, matplotlib was used to plot various aspects of the weather vs latitude.
+                        This site provides the source data and visualizations created as part of the analysis, as well as explanations
+                        and descriptions of any trends and correlations observed.
+                        Following relationships were studied:
+                    </p> 
+                        <ul>
+                            <li>Temperature (F) vs. Latitude</li>
+                            <li>Humidity (%) vs. Latitude</li>
+                            <li>Cloudiness (%) vs. Latitude</li>
+                            <li>Wind Speed (mph) vs. Latitude</li>
+                        </ul>    
+                </p>
+            </div>
+            <div class="col-sm-5">
+                <h1>Visualizations</h1>
+                <hr>
+                <div class="background col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="temperature.html"><img src="Resources\assets\images\Fig1.png" alt="Lattitude Vs Temperature Plot"></a>
+                        </div>
+                        <div class="col-sm-6">
+                            <a href="humidity.html"><img src="Resources\assets\images\Fig2.png" alt="Lattitude Vs Humidity Plot"></a>
+                        </div>
+      
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="cloudiness.html"><img src="Resources\assets\images\Fig3.png" alt="Lattitude Vs Cloudiness Plot"></a>
+                        </div>
+                        <div class="col-sm-6">
+                           <a href="wind.html"><img src="Resources\assets\images\Fig4.png" alt="Lattitude Vs Wind Speed Plot"></a>
+                        </div>
+          
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+
